@@ -8,7 +8,6 @@ if [ $user_id -ne 0 ]; then
     
 fi
 
-echo "proceeding..."
 
 validate()
 {
@@ -20,6 +19,9 @@ validate()
     fi
 
 }
+
+echo "proceeding..."
+
 dnf install nginxxx -y 
 validate $? "nginx installation
 
