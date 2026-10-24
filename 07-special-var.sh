@@ -16,3 +16,4 @@ wait $! #script wait untill $! command complete
 echo "print line number : $LINENO "
 echo "previous command exit status: $?"
 echo "total time executed: $SECONDS"
+echo "$COURSE"
