@@ -23,7 +23,7 @@ validate()
 echo "proceeding..."
 
 dnf install nginx -y 
-validate $? "nginx installation
+validate $? "nginx installation"
 
 dnf install mysql -y
 validate $? "mysql installation"
