@@ -13,3 +13,4 @@ echo "count is : $COUNT"
 
 FRUITS=("Apple", "Banana", "orange") #this is called Array
 echo "All fruits : ${FRUITS[@]}"
+echo "Print first fruit: ${FRUITS[0]}"
