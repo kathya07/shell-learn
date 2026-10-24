@@ -3,6 +3,7 @@
 echo "Enter marks"
 read marks
 
+# lt means less than
 if[$marks -lt 33]; then
     echo "fail"
 elif [ $marks -lt 55]; then
@@ -14,3 +15,5 @@ elif [$marks -lt 77]; then
 else 
     echo "distinction"
 fi  
+
+echo "End"
