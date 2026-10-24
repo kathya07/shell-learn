@@ -4,7 +4,7 @@ echo "Enter marks"
 read marks
 
 # lt means less than
-if[$marks -lt 33]; then
+if [ $marks -lt 33]; then
     echo "fail"
 elif [ $marks -lt 55]; then
     echo "First Class"
