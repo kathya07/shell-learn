@@ -2,7 +2,7 @@
 
 user_id=$(id -u)
 logs_folder="/var/logs/shell-practice"
-logs_file="${logs_folder}/${0}.log"
+logs_file="${logs_folder}/${0}.log" ## /var/logs/shell-practice/13-logs.sh.log
 
 if [ $user_id -ne 0 ]; then
     echo " please run the script using sudo access"
@@ -10,8 +10,10 @@ if [ $user_id -ne 0 ]; then
     
 fi
 
+
 mkdir -p $logs_folder
 
+echo " script started execution at $(date +"%F %T") 
 validate()
 {
     if [ $1 -ne 0 ]; then
@@ -20,7 +22,6 @@ validate()
     else
         echo "${2}...Success | tee -a $logs_file"
     fi
-
 }
 
 echo "proceeding..."
@@ -30,4 +31,4 @@ validate $? "nginx installation"
 
 dnf install mysql -y  &>> $logs_file
 validate $? "mysql installation"
-echo " still proceeding..."
+echo " script execution completed at $(date +"%F %T")
