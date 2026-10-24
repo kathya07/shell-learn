@@ -4,6 +4,6 @@ echo "enter user name: "
 read -s USER_NAME
 
 echo "enter password: "
-read -s PASSWORD
+read -s PASSWORD  # s means silent
 
 echo "username is :  $USER_NAME, password is : $PASSWORD "
