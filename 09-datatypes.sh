@@ -16,4 +16,4 @@ echo "All fruits : ${FRUITS[@]}"
 echo "Print first fruit: ${FRUITS[0]}"
 
 NAME="kathyayini"
-echo "$NAMEpalla"
+echo "${NAME}palla"
